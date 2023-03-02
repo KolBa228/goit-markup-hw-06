@@ -865,6 +865,21 @@ color: var(--acent-color);
     resize: none;
 }
 
+.text-input:focus + .text-area {
+    display: none;
+}
+
+.text-area {
+    font-weight: 400;
+    font-size: 1.16;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 117, 0.5);
+    position: absolute;
+    left: 40px;
+    top: 360px;
+}
+
 .modal-input {
     width: 360px;
     height: 40px;
