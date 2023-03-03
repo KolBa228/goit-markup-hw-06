@@ -712,6 +712,26 @@ color: var(--acent-color);
 
 .subscribe-form {
     padding-right: 24px;
+    display: flex;
+    gap: 24px
+    ;
+}
+
+.modal-sub {
+    margin: 0 auto;
+    width: 159px;
+    height: 56px;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    border-color: transparent;
+    color: var(--main-white-color);
 }
 
 .submit-button {
@@ -863,6 +883,8 @@ color: var(--acent-color);
     border: 2px solid rgba(128, 128, 128, 0.3);
     color: var(--main-text-color);
     resize: none;
+    padding-left: 16px;
+    padding-top: 8px;
 }
 
 .text-input:focus + .text-area {
