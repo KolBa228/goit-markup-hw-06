@@ -228,7 +228,6 @@
                 </li>
             </ul>
             </div>
-            </div>
         </section>
         <section class="section">
             <div class="container">
@@ -354,17 +353,27 @@
                     <input class="modal-input" type="tel" name="tel" id="tel">
                     <label class="form-text" for="mail">Email</label>
                     <input class="modal-input" type="email" name="email" id="email">
+                    <svg width="15" height="12" class="form-icons">
+                        <use href="./images/symbol-defs.svg#icon-email"></use>
+                      </svg>
                     <label class="form-text" for="text">Comment</label>
                     <textarea 
                     placeholder="Text input" class="text-input" name="text" id="text"></textarea>
                     <!-- <p class="text-area">Text input</p> -->
-                    <div class="agree-class">
+                    <!-- <div class="agree-class">
                         <input class="input" type="checkbox" name="topic" value="agree" id="adree">
                         <label class="agree" for="adree">I accept the terms and conditions of the <span class="privacy"> Privacy Policy</span></label>
-                    </div>
+                    </div> -->
+                    <div class="privasy-wrapper">
+                        <label class="privacy-label">
+                          <input type="checkbox" class="checkbox visually-hidden" />
+                          <span class="privacy-icon"></span>
+                          I accept the terms and conditions of the
+                          <a href="#">Privacy Policy</a>
+                        </label>
+                      </div>
                     <button class="modal-sub" type="submit">Send</button>
                 </form>
-
             </div>
         </div>
       </div>
