@@ -914,21 +914,34 @@ color: var(--acent-color);
     top: 360px;
 }
 
+.phone-icon {
+    top: 35.6%;
+}
+
+.name-icons {
+    top: 23.6%;
+}
+
 .form-icons {
     position: absolute;
-    top: 54%;
-    left: 5%;
     fill: var(--main-text-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    left: 8%;
+  }
+
+  .email-icon {
+    top: 47.5%;
   }
 
 .modal-input {
+    padding: 11px 38px;
     width: 360px;
     height: 40px;
     border-radius: 4px;
     border: 2px solid rgba(128, 128, 128, 0.3);
     color: var(--main-text-color);
     margin-bottom: 8px;
+    /* position: relative; */
 }
 
 .modal-text {
@@ -1000,3 +1013,7 @@ color: var(--acent-color);
     line-height: 1.17;
     letter-spacing: 0.04em;
   }
+
+.modal-input:focus + .form-icons {
+    fill: var(--main-color);
+}
